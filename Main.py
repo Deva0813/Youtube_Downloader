@@ -1,5 +1,5 @@
 from pytube import YouTube 
-import os,sys,zipfile
+import os,sys
 
 def progressive_streams(): #progressive streams
     global pass_req
@@ -184,8 +184,8 @@ def select_file(f_path,f_name):
     return None
 
 # #-----------------------------------------------------------------UNZIP----------------------------------------------------------------
-with zipfile.ZipFile("./ffmpeg.zip", 'r') as zip_ref:
-    zip_ref.extractall("./ffmpeg")
+# with zipfile.ZipFile("./ffmpeg.zip", 'r') as zip_ref:
+#     zip_ref.extractall("./ffmpeg")
 #-----------------------------------------------------------------MAIN-----------------------------------------------------------------   
 os.system("cls")
 
